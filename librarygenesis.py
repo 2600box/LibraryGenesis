@@ -179,6 +179,12 @@ class result:
     def download(self):
         print("Downloading....")
         
+        # Initialize file_path with the default *nix pathing
+        file_path = self.file_path
+        DestDir = self.item.DestDir
+        FinalDir = self.item.FinalDir
+
+
         # keep *nix pathing.
         if os.name == 'nt':
             DOWNLOAD_DIR = "P:\\media\\"
